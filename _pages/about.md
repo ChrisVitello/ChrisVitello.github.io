@@ -18,6 +18,16 @@ ITOA Student with a strong foundation in computer science, leadership experience
 
 ---
 
+## Projects
+
+[Calculator project](https://github.com/ChrisVitello/ChrisVitello.github.io/blob/master/Calcproj.py)
+
+[Ordering system project](https://github.com/ChrisVitello/ChrisVitello.github.io/tree/master/WebAppMiraChris-96476d2b6e4aec8800ff343b7d9812ce7f2d6fd2)
+
+[APG project](https://github.com/ChrisVitello/ChrisVitello.github.io/blob/master/main.js)
+
+[Game project](https://github.com/ChrisVitello/ChrisVitello.github.io/tree/master/Fanidoku_game)
+
 ## Skills
 
 - **Programming Languages:** Java, Python  
