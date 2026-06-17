@@ -1,0 +1,61 @@
+.center-horizontally {
+    display: flex;
+    justify-content: center;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.head{
+    border-radius: 15px;
+
+    /* The color is a variable from the html file */
+    background-color: var(--boxcolor);
+
+    /*Padding*/
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+
+    /* Border pixels with type of border and color */
+    border: 2px solid black;
+
+    /* Only as wide as its content */
+    display: inline-block;
+
+    margin-top: 30px; /* Away from other elements */
+
+    width: 320px;
+    padding: 5px 10px;
+    line-height: 1;
+    margin: 0 auto;
+
+
+    justify-content = "center";
+
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px; /* Adds space between the image and the text */
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.float-right {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+
+.button{
+    margin-top: 30px;
+    width: 125px;
+    line-height: 5;
+    border: 2px solid black;
+}

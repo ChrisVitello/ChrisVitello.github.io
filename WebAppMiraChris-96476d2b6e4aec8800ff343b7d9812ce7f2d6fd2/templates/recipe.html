@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %} Recipe | VitelloWeb{% endblock %}
+{% block content %}
+<div>
+    <h1 class = "head">{{name}}</h1>
+</div>
+<div class = "float-left">
+
+    <img src = "{{link}}" alt = "{{bio}}" width = "500">
+
+</div>
+<div class = "float-right">
+    <p>{{description}}</p>
+
+<form action = "{{url_for('cart')}}" method = "GET">
+    <label for = "toppings">Choose toppings: </label>
+    <select name="toppings" id="toppings">
+        <option value="None">None</option>
+        <option value="{{add}}">{{add}}</option>
+        <option value="{{add1}}">{{add1}}</option>
+        <option value="{{add2}}">{{add2}}</option>
+        <option value="{{add3}}">{{add3}}</option>
+    </select> <br>
+
+
+    <label for = "modifications">Choose modifications: </label>
+    <select name="modifications" id="modifications">
+        <option value="None">None</option>
+        <option value="{{mod}}">{{mod}}</option>
+        <option value="{{mod1}}">{{mod1}}</option>
+        <option value="{{mod2}}">{{mod2}}</option>
+        <option value="{{mod3}}">{{mod3}}</option>
+    </select> <br>
+
+
+    <input type = "text" maxlength="250" placeholder = "Extra Info" name = "Extra Information"> <br>
+    <button type = "submit">Add to cart</button>
+</form>
+</div>
+{% endblock %}

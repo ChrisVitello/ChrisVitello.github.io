@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+    {% block title %} Login | VitelloWeb {% endblock %}
+
+{% block content %}
+    <h1>Login</h1>
+    <form method = "POST">
+        <!-- Displays username -->
+        <label for = "username">Username</label><br>
+        <!-- Makes it a text input field. The value is saved as "username"
+        so you can retrieve it in request.form["username"] -->
+        <input type = "text" name = "username" required><br><br>
+
+        <label for = "password">Password</label><br>
+        <!-- Type password makes it so that it is in dots
+         and the password is saved as value "password" for easy retrieval-->
+        <input type = "password" name = "password" required><br><br>
+
+        <!-- When clicked, submit form -->
+        <button type = "submit">Log In</button>
+
+    </form>
+    <a href = "{{ url_for('signup') }}">New? Sign Up.</a>
+
+    <!-- Jinja, if an error, print value error -->
+    {% if error %}
+    <p style = "color: red;">{{error}}</p>
+    {% endif %}
+
+{% endblock %}
